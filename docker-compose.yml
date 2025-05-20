@@ -1,11 +1,9 @@
-version: '3'
-
 volumes:
   ikev2-vpn-data:
 
 services:
   vpn:
-    image: hwdsl2/ipsec-vpn-server
+    image: malidong-registry.azurecr.io/ipsec-vpn-server
     restart: always
     env_file:
       - ./vpn.env
